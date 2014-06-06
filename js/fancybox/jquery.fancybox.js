@@ -641,7 +641,7 @@
 				rez.h = locked[0].clientHeight;
 
 			} else {
-				// See http://bugs.jquery.com/ticket/6724
+				// See http://bugs.jquery.com/t/6724
 				rez.w = isTouch && window.innerWidth  ? window.innerWidth  : W.width();
 				rez.h = isTouch && window.innerHeight ? window.innerHeight : W.height();
 			}
@@ -1648,7 +1648,7 @@
 				}
 			}
 
-			// Workaround for http://bugs.jquery.com/ticket/12273
+			// Workaround for http://bugs.jquery.com/t/12273
 			if (effect === 'none') {
 				F._afterZoomIn();
 
