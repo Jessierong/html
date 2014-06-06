@@ -21,7 +21,7 @@ function fixMenu(){
  
 //tab select
 function tabselect() {
-    $("#menuTab li").click(function() {
+    $(".menu li").click(function() {
         $(this).addClass("select").siblings().removeClass("select");
         var i = $(this).index();
         $("#detailTab>div").hide().parent().children().eq(i).show();
