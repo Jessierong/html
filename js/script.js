@@ -1,6 +1,5 @@
  // JavaScript Document
 $(function() {
-	
 	//initial
 	fixMenu();
 	tabselect()
@@ -8,15 +7,18 @@ $(function() {
  
 })
 
-//window resize
+/*//window resize
 $(window).resize(function() {
 	fixMenu();
-});
+});*/
 
 function fixMenu(){
-	var winHeight = $(window).height();
-	var fixHeight = $(".fix").outerHeight();
-	$(".scroll").height( winHeight - fixHeight );
+	var winWidth = $(window).width();
+	if ( winWidth >= 320 ){
+		var winHeight = $(window).height();
+		var fixHeight = $(".fix").outerHeight();
+		$(".scroll").height( winHeight - fixHeight );
+	}
 }
  
 //tab select
